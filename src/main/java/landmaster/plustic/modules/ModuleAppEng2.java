@@ -23,7 +23,7 @@ public class ModuleAppEng2 implements IModule {
 				certusQuartz.setRepresentativeItem(quartz);
 			});
 			PlusTiC.proxy.setRenderInfo(certusQuartz, 0x55D3E7FF);
-			TinkerRegistry.addMaterialStats(certusQuartz, new HeadMaterialStats(250, 6.4f, 4.5f, DIAMOND),
+			TinkerRegistry.addMaterialStats(certusQuartz, new HeadMaterialStats(150, 6.4f, 4.5f, DIAMOND),
 					new HandleMaterialStats(0.8f, 80),
 					new ExtraMaterialStats(70),
 					PlusTiC.justWhy,
@@ -39,7 +39,7 @@ public class ModuleAppEng2 implements IModule {
 				fluixCrystal.setRepresentativeItem(crystal);
 			});
 			PlusTiC.proxy.setRenderInfo(fluixCrystal, 0x883D0099);
-			TinkerRegistry.addMaterialStats(fluixCrystal, new HeadMaterialStats(700, 7, 6.2f, OBSIDIAN),
+			TinkerRegistry.addMaterialStats(fluixCrystal, new HeadMaterialStats(350, 7, 6.2f, OBSIDIAN),
 					new HandleMaterialStats(1.0f, 0),
 					new ExtraMaterialStats(75),
 					PlusTiC.justWhy,

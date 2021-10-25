@@ -20,6 +20,8 @@ import slimeknights.tconstruct.library.tinkering.*;
 import slimeknights.tconstruct.library.tools.*;
 import slimeknights.tconstruct.tools.*;
 
+import javax.annotation.Nullable;
+
 @Mod.EventBusSubscriber(modid = ModInfo.MODID)
 public class ModuleTools implements IModule {
 	public static ToolKatana katana;
@@ -92,10 +94,9 @@ public class ModuleTools implements IModule {
 				}
 			}
 		}
-		
 		// for added PlusTiC tools
 		// TODO add more modifier jsons
-		for (IModifier modifier: new IModifier[] {
+		for (@Nullable IModifier modifier: new IModifier[] {
 			TinkerModifiers.modBaneOfArthopods,
 			TinkerModifiers.modBeheading,
 			TinkerModifiers.modDiamond,
@@ -114,6 +115,10 @@ public class ModuleTools implements IModule {
 			TinkerModifiers.modSoulbound,
 			TinkerModifiers.modWebbed,
 		}) {
+			if (modifier == null){
+				System.out.println("A Module in TConstruct is disabled! Cannot add its stuff to PlusTic!");
+				continue;
+			}
 			PlusTiC.proxy.registerModifierModel(modifier,
 					new ResourceLocation(ModInfo.MODID, "models/item/modifiers/"+modifier.getIdentifier()));
 		}

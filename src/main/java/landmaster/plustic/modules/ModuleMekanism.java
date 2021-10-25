@@ -140,10 +140,10 @@ public class ModuleMekanism implements IModule {
 				TinkerRegistry.registerAlloy(new FluidStack(osmiridiumFluid, 2),
 						new FluidStack(osmium.getFluid(), 1), new FluidStack(iridium.getFluid(), 1));
 				
-				TinkerRegistry.addMaterialStats(osmiridium, new HeadMaterialStats(1300, 6.8f, 8, COBALT));
-				TinkerRegistry.addMaterialStats(osmiridium, new HandleMaterialStats(1.5f, 30));
-				TinkerRegistry.addMaterialStats(osmiridium, new ExtraMaterialStats(80));
-				TinkerRegistry.addMaterialStats(osmiridium, new BowMaterialStats(0.38f, 2.05f, 10));
+				TinkerRegistry.addMaterialStats(osmiridium, new HeadMaterialStats(300, 13f, 15, COBALT));
+				TinkerRegistry.addMaterialStats(osmiridium, new HandleMaterialStats(1.05f, 30));
+				TinkerRegistry.addMaterialStats(osmiridium, new ExtraMaterialStats(20));
+				TinkerRegistry.addMaterialStats(osmiridium, new BowMaterialStats(0.38f, 3.05f, 15));
 				
 				PlusTiC.materials.put("osmiridium", osmiridium);
 			}

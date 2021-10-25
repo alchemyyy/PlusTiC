@@ -119,7 +119,7 @@ public class ModuleBase implements IModule {
 				invar.setFluid(FluidRegistry.getFluid("invar"));
 				
 				TinkerRegistry.addMaterialStats(invar,
-						new HeadMaterialStats(600, 6, 5f, OBSIDIAN),
+						new HeadMaterialStats(600, 6, 5f, DIAMOND),
 						new HandleMaterialStats(1.3f, 0),
 						new ExtraMaterialStats(100),
 						PlusTiC.justWhy,
@@ -144,9 +144,9 @@ public class ModuleBase implements IModule {
 				}
 				iridium.setFluid(FluidRegistry.getFluid("iridium"));
 				
-				TinkerRegistry.addMaterialStats(iridium, new HeadMaterialStats(520, 6, 5.8f, DIAMOND));
-				TinkerRegistry.addMaterialStats(iridium, new HandleMaterialStats(1.15f, -20));
-				TinkerRegistry.addMaterialStats(iridium, new ExtraMaterialStats(60));
+				TinkerRegistry.addMaterialStats(iridium, new HeadMaterialStats(120, 16, 16f, COBALT));
+				TinkerRegistry.addMaterialStats(iridium, new HandleMaterialStats(1f, -1000));
+				TinkerRegistry.addMaterialStats(iridium, new ExtraMaterialStats(10));
 				TinkerRegistry.addMaterialStats(iridium, PlusTiC.justWhy);
 				
 				PlusTiC.materials.put("iridium", iridium);
